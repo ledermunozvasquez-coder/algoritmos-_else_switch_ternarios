@@ -1,24 +1,41 @@
 /*
-  Ejercicio 8 - Ternario: Control de velocidad
+  Ejercicio 8 - Switch: Planetas del sistema solar
 
-  El limite de velocidad en una zona escolar es 30 km/h.
-  Declara una variable "velocidad" con la velocidad actual del vehiculo en km/h.
-  Usando el operador ternario, asigna a la variable "alerta"
-  el mensaje correspondiente:
-  - Si la velocidad es mayor a 30: "ALERTA: Exceso de velocidad."
-  - Si no:                          "Velocidad dentro del limite."
-  Imprime la velocidad y la alerta.
+  Declara una variable "numeroPlaneta" con un valor del 1 al 8,
+  donde 1 es el planeta mas cercano al sol.
+  Usando switch, muestra el nombre del planeta correspondiente:
+  1 → Mercurio
+  2 → Venus
+  3 → Tierra
+  4 → Marte
+  5 → Jupiter
+  6 → Saturno
+  7 → Urano
+  8 → Neptuno
+  Para cualquier otro numero, muestra: "No es un planeta del sistema solar."
 */
-// Ejercicio 8 - Ternario: Control de velocidad
 
+let numeroPlaneta = 8;
+console.log("El planeta numero " + numeroPlaneta + " es: ");
 
-let velocidad = 45;
+switch (numeroPlaneta) {
+  case 1: console.log("Mercurio");
+  break;
+  case 2: console.log("Venus");
+  break;
+  case 3: console.log("Tierra");
+  break;
+  case 4: console.log("Marte");
+  break;
+  case 5: console.log("Jupiter");
+  break;
+  case 6: console.log("Saturno");
+  break;
+  case 7: console.log("Urano");
+  break;
+  case 8: console.log("Neptuno");
+  break;
+  default: console.log("No es un planeta del Sistema Solar.")
 
+}
 
-let alerta = velocidad > 30
-    ? "ALERTA: Exceso de velocidad."
-    : "Velocidad dentro del límite.";
-
-
-console.log("Velocidad: " + velocidad + " km/h");
-console.log("Alerta: " + alerta);

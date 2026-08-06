@@ -1,15 +1,42 @@
 /*
-  Ejercicio 4 - Ternario: El mayor de dos numeros
+  Ejercicio 4 - Switch: Color por inicial
 
-  Declara dos variables "a" y "b" con valores numericos distintos.
-  Usando el operador ternario, determina cual de los dos numeros es mayor
-  y guardalo en una variable llamada "mayor".
-  Imprime: "El numero mayor es: X"
+  Declara una variable "inicial" con la letra inicial de un color en ingles
+  (en mayuscula). Usando switch, muestra el nombre del color en español:
+  - "R" → Rojo   (Red)
+  - "G" → Verde  (Green)
+  - "B" → Azul   (Blue)
+  - "Y" → Amarillo (Yellow)
+  - "W" → Blanco (White)
+  - "K" → Negro  (Black)
+  Si la inicial no corresponde a ninguno de estos colores,
+  muestra: "Color no registrado."
 */
 
-let a = 14
-let b = 15
+let color = "K" 
 
-let mayor = a > b ? a: b;
-console.log("EL numero mayor es: " + mayor);
+switch (color) {
+    case "R":
+        console.log("Rojo");
+        break;
+    case "G":
+        console.log("Verde");
+        break;
+    case "B":
+        console.log("Azul");
+        break;
+    case "Y":
+        console.log("Amarillo");
+        break;
+    case "W":
+        console.log("Blanco");
+        break;
+    case "K":
+        console.log("Negro");
+        break;
+    default:
+        console.log("Color no registrado.");
+}
+
+
 

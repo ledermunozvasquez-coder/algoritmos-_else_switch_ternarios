@@ -1,28 +1,79 @@
 /*
-  Ejercicio 10 - Ternario: Tarifa de parqueadero
+  Ejercicio 10 - Switch: Signo zodiacal
 
-  Un parqueadero cobra de forma diferente segun el tipo de vehiculo:
-  - Moto:  $2.000 por hora
-  - Carro: $5.000 por hora
+  Declara una variable "mes" con el mes de nacimiento de una persona (1 al 12).
+  Usando switch con casos agrupados, determina el signo zodiacal.
+  (Se usa el primer signo que cubre la mayor parte del mes para simplificar.)
 
-  Declara una variable "esMoto" con valor true o false,
-  y una variable "horas" con la cantidad de horas que el vehiculo estuvo parqueado.
-  Usando el operador ternario, calcula la tarifa por hora y luego el total a pagar.
-  Imprime el tipo de vehiculo, las horas parqueadas y el total.
+  1  → Capricornio
+  2  → Acuario
+  3  → Piscis
+  4  → Aries
+  5  → Tauro
+  6  → Geminis
+  7  → Cancer
+  8  → Leo
+  9  → Virgo
+  10 → Libra
+  11 → Escorpio
+  12 → Sagitario
+
+  Imprime el mes de nacimiento y el signo zodiacal correspondiente.
 */
 
-let esMoto = false; 
-let horas = 8;    
+let mes = 2;
+console.log ("El mes " + mes + " corresponde al signo zodiacal de: ");
 
-let tarifaPorHora = esMoto ? 2000 : 5000;
+switch (mes) {
+case 1: signo = "Capricornio";
+console.log ("Capricornio");
+break;
 
+case 2: signo = "Acuario";
+console.log ("Acuario");
+break;
 
-let totalPagar = tarifaPorHora * horas;
+case 3: signo = "Piscis";
+console.log ("Piscis");
+break;
 
+case 4: signo = "Aries";
+console.log ("Aries");
+break;
 
-console.log("Tipo de vehículo: " + (esMoto ? "Moto" : "Carro"));
-console.log("Horas parqueadas: " + horas);
-console.log("Tarifa por hora: $" + tarifaPorHora);
-console.log("Total a pagar: $" + totalPagar);
+case 5: signo = "Tauro";
+console.log ("Tauro");
+break;
 
+case 6: signo = "Geminis";
+console.log ("Geminis");
+break;
+
+case 7: signo = "Cancer";
+console.log ("Cancer");
+break;
+
+case 8: signo = "Leo";
+console.log ("Leo");
+break;
+
+case 9: signo = "Virgo";
+console.log ("Virgo");
+break;
+
+case 10: signo = "Libra";
+console.log ("Libra");
+break;
+
+case 11: signo = "Escorpio";
+console.log ("Escorpio");
+break;
+
+case 12: signo = "Sagitario";
+console.log ("Sagitario");
+
+default: signo = ("Mes Invalido");
+console.log ("Mes Invalido");
+
+}
 

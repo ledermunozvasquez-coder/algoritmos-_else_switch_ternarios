@@ -1,26 +1,40 @@
 /*
-  Ejercicio 9 - Ternario: Saludo segun hora del dia
+  Ejercicio 9 - Switch: Tipo de comida por numero
 
-  Declara una variable "hora" con un valor entre 0 y 23 (formato 24 horas).
-  Usando el operador ternario, asigna el saludo apropiado a la variable "saludo":
-  - De 0 a 11:  "Buenos dias"
-  - De 12 a 17: "Buenas tardes"
-  - De 18 a 23: "Buenas noches"
-  Imprime el saludo en consola.
-
-  Pista: puedes encadenar dos operadores ternarios para tres opciones.
+  Un restaurante tiene un menu numerado. Declara una variable "opcion"
+  con el numero del plato elegido por el cliente.
+  Usando switch, muestra el nombre del plato y su precio:
+  1 → "Bandeja paisa"       - $18.000
+  2 → "Ajiaco bogotano"     - $15.000
+  3 → "Sancocho de gallina" - $14.000
+  4 → "Arroz con pollo"     - $12.000
+  5 → "Sopa de lentejas"    - $10.000
+  Si el numero no esta en el menu, muestra: "Opcion no disponible en el menu."
 */
 
-let hora = 12; 
+let opcion = 5;
+
+switch (opcion) {
+  case 1: ("Bandeja Paisa cuesta $18.000");
+  console.log ("Bandeja Paisa cuesta $18.000");
+  break;
+  case 2: ("Ajiaco Bogotano cuesta $15.000");
+  console.log("Ajiaco Bogotano cuesta $15.000");
+  break;
+  case 3: ("Sancocho de gallina cuesta $14.000");
+  console.log("Sancocho de gallina cuesta $14.000");
+  break;
+  case 4: ("Arroz con pollo cuesta $12.000");
+  console.log("Arroz con pollo cuesta $12.000");
+  break;
+  case 5: ("Sopa de lentejas cuesta $10.000");
+  console.log("Sopa de lentejas cuesta $10.000");
+  break;
+  default:
+  console.log("Opcion no disponible en el menu.");
+}
 
 
-let saludo = (hora >= 0 && hora <= 11)
-    ? "Buenos días"
-    : (hora >= 12 && hora <= 17)
-        ? "Buenas tardes"
-        : "Buenas noches";
 
 
-
-console.log("Saludo: " + saludo);
 
